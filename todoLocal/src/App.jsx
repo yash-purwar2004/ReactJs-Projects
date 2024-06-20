@@ -40,10 +40,6 @@ function App() {
   }
 
 
-
-  // { ...todo, completed: !todo.completed }: This creates a new object by copying all properties of the current to-do item (todo) 
-  // and then toggling the completed property. The spread operator ... is used to copy properties from todo. The completed property 
-  // is set to the opposite of its current value (!todo.completed).
   const toggleComplete = (id) => {
     setTodos((prev) => prev.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo
       )
